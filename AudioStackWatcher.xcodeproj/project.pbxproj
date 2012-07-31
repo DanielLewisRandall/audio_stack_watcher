@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79186C3C155C8FDC00D5FC12 /* WatcherLegend.png in Resources */ = {isa = PBXBuildFile; fileRef = 79186C3B155C8FDC00D5FC12 /* WatcherLegend.png */; };
+		79E5B1EC1551C54F000E8FEF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E5B1EB1551C54F000E8FEF /* Cocoa.framework */; };
+		79E5B1F61551C54F000E8FEF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E5B1F41551C54F000E8FEF /* InfoPlist.strings */; };
+		79E5B1F81551C54F000E8FEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E5B1F71551C54F000E8FEF /* main.m */; };
+		79E5B1FC1551C54F000E8FEF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 79E5B1FA1551C54F000E8FEF /* Credits.rtf */; };
+		79E5B1FF1551C54F000E8FEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E5B1FE1551C54F000E8FEF /* AppDelegate.m */; };
+		79E5B2021551C550000E8FEF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E5B2001551C550000E8FEF /* MainMenu.xib */; };
+		79E5B20F1551ED8F000E8FEF /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E5B20E1551ED8F000E8FEF /* CoreAudio.framework */; };
+		79E5B2141552E73F000E8FEF /* AudioDeviceItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E5B2111552E73F000E8FEF /* AudioDeviceItem.m */; };
+		79E5B2151552E73F000E8FEF /* AudioDeviceItems.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E5B2131552E73F000E8FEF /* AudioDeviceItems.m */; };
+		79E5B21C15530F4A000E8FEF /* Output.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E5B21B15530F4A000E8FEF /* Output.png */; };
+		79E5B221155319B8000E8FEF /* Input.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E5B220155319B8000E8FEF /* Input.png */; };
+		79E5B22815534E62000E8FEF /* DefInput.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E5B22615534E62000E8FEF /* DefInput.png */; };
+		79E5B22915534E62000E8FEF /* DefOutput.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E5B22715534E62000E8FEF /* DefOutput.png */; };
+		79E5B2351554627F000E8FEF /* Headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E5B2331554627E000E8FEF /* Headphones.png */; };
+		79E5B2361554627F000E8FEF /* Speakers.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E5B2341554627E000E8FEF /* Speakers.png */; };
+		79E5B238155472C1000E8FEF /* InternalMic.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E5B237155472C1000E8FEF /* InternalMic.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79186C3B155C8FDC00D5FC12 /* WatcherLegend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WatcherLegend.png; sourceTree = "<group>"; };
+		79E5B1E71551C54F000E8FEF /* AudioStackWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioStackWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E5B1EB1551C54F000E8FEF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		79E5B1EE1551C54F000E8FEF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		79E5B1EF1551C54F000E8FEF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		79E5B1F01551C54F000E8FEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79E5B1F31551C54F000E8FEF /* AudioStackWatcher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioStackWatcher-Info.plist"; sourceTree = "<group>"; };
+		79E5B1F51551C54F000E8FEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79E5B1F71551C54F000E8FEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79E5B1F91551C54F000E8FEF /* AudioStackWatcher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioStackWatcher-Prefix.pch"; sourceTree = "<group>"; };
+		79E5B1FB1551C54F000E8FEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		79E5B1FD1551C54F000E8FEF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		79E5B1FE1551C54F000E8FEF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		79E5B2011551C550000E8FEF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		79E5B20E1551ED8F000E8FEF /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		79E5B2101552E73F000E8FEF /* AudioDeviceItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDeviceItem.h; sourceTree = "<group>"; };
+		79E5B2111552E73F000E8FEF /* AudioDeviceItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioDeviceItem.m; sourceTree = "<group>"; };
+		79E5B2121552E73F000E8FEF /* AudioDeviceItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioDeviceItems.h; sourceTree = "<group>"; };
+		79E5B2131552E73F000E8FEF /* AudioDeviceItems.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioDeviceItems.m; sourceTree = "<group>"; };
+		79E5B2161552E77D000E8FEF /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		79E5B21B15530F4A000E8FEF /* Output.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Output.png; sourceTree = "<group>"; };
+		79E5B220155319B8000E8FEF /* Input.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Input.png; sourceTree = "<group>"; };
+		79E5B22615534E62000E8FEF /* DefInput.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DefInput.png; sourceTree = "<group>"; };
+		79E5B22715534E62000E8FEF /* DefOutput.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DefOutput.png; sourceTree = "<group>"; };
+		79E5B2331554627E000E8FEF /* Headphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Headphones.png; sourceTree = "<group>"; };
+		79E5B2341554627E000E8FEF /* Speakers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Speakers.png; sourceTree = "<group>"; };
+		79E5B237155472C1000E8FEF /* InternalMic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = InternalMic.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79E5B1E41551C54F000E8FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E5B20F1551ED8F000E8FEF /* CoreAudio.framework in Frameworks */,
+				79E5B1EC1551C54F000E8FEF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79E5B1DC1551C54F000E8FEF = {
+			isa = PBXGroup;
+			children = (
+				79E5B20E1551ED8F000E8FEF /* CoreAudio.framework */,
+				79E5B1F11551C54F000E8FEF /* AudioStackWatcher */,
+				79E5B1EA1551C54F000E8FEF /* Frameworks */,
+				79E5B1E81551C54F000E8FEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79E5B1E81551C54F000E8FEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79E5B1E71551C54F000E8FEF /* AudioStackWatcher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79E5B1EA1551C54F000E8FEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79E5B1EB1551C54F000E8FEF /* Cocoa.framework */,
+				79E5B1ED1551C54F000E8FEF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79E5B1ED1551C54F000E8FEF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79E5B1EE1551C54F000E8FEF /* AppKit.framework */,
+				79E5B1EF1551C54F000E8FEF /* CoreData.framework */,
+				79E5B1F01551C54F000E8FEF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		79E5B1F11551C54F000E8FEF /* AudioStackWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				79186C3B155C8FDC00D5FC12 /* WatcherLegend.png */,
+				79E5B237155472C1000E8FEF /* InternalMic.png */,
+				79E5B2331554627E000E8FEF /* Headphones.png */,
+				79E5B2341554627E000E8FEF /* Speakers.png */,
+				79E5B22615534E62000E8FEF /* DefInput.png */,
+				79E5B22715534E62000E8FEF /* DefOutput.png */,
+				79E5B220155319B8000E8FEF /* Input.png */,
+				79E5B21B15530F4A000E8FEF /* Output.png */,
+				79E5B2161552E77D000E8FEF /* Macros.h */,
+				79E5B2101552E73F000E8FEF /* AudioDeviceItem.h */,
+				79E5B2111552E73F000E8FEF /* AudioDeviceItem.m */,
+				79E5B2121552E73F000E8FEF /* AudioDeviceItems.h */,
+				79E5B2131552E73F000E8FEF /* AudioDeviceItems.m */,
+				79E5B1FD1551C54F000E8FEF /* AppDelegate.h */,
+				79E5B1FE1551C54F000E8FEF /* AppDelegate.m */,
+				79E5B2001551C550000E8FEF /* MainMenu.xib */,
+				79E5B1F21551C54F000E8FEF /* Supporting Files */,
+			);
+			path = AudioStackWatcher;
+			sourceTree = "<group>";
+		};
+		79E5B1F21551C54F000E8FEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79E5B1F31551C54F000E8FEF /* AudioStackWatcher-Info.plist */,
+				79E5B1F41551C54F000E8FEF /* InfoPlist.strings */,
+				79E5B1F71551C54F000E8FEF /* main.m */,
+				79E5B1F91551C54F000E8FEF /* AudioStackWatcher-Prefix.pch */,
+				79E5B1FA1551C54F000E8FEF /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79E5B1E61551C54F000E8FEF /* AudioStackWatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E5B2051551C550000E8FEF /* Build configuration list for PBXNativeTarget "AudioStackWatcher" */;
+			buildPhases = (
+				79E5B1E31551C54F000E8FEF /* Sources */,
+				79E5B1E41551C54F000E8FEF /* Frameworks */,
+				79E5B1E51551C54F000E8FEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AudioStackWatcher;
+			productName = AudioStackWatcher;
+			productReference = 79E5B1E71551C54F000E8FEF /* AudioStackWatcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79E5B1DE1551C54F000E8FEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = DanielRandall;
+			};
+			buildConfigurationList = 79E5B1E11551C54F000E8FEF /* Build configuration list for PBXProject "AudioStackWatcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 79E5B1DC1551C54F000E8FEF;
+			productRefGroup = 79E5B1E81551C54F000E8FEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79E5B1E61551C54F000E8FEF /* AudioStackWatcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79E5B1E51551C54F000E8FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E5B1F61551C54F000E8FEF /* InfoPlist.strings in Resources */,
+				79E5B1FC1551C54F000E8FEF /* Credits.rtf in Resources */,
+				79E5B2021551C550000E8FEF /* MainMenu.xib in Resources */,
+				79E5B21C15530F4A000E8FEF /* Output.png in Resources */,
+				79E5B221155319B8000E8FEF /* Input.png in Resources */,
+				79E5B22815534E62000E8FEF /* DefInput.png in Resources */,
+				79E5B22915534E62000E8FEF /* DefOutput.png in Resources */,
+				79E5B2351554627F000E8FEF /* Headphones.png in Resources */,
+				79E5B2361554627F000E8FEF /* Speakers.png in Resources */,
+				79E5B238155472C1000E8FEF /* InternalMic.png in Resources */,
+				79186C3C155C8FDC00D5FC12 /* WatcherLegend.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79E5B1E31551C54F000E8FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E5B1F81551C54F000E8FEF /* main.m in Sources */,
+				79E5B1FF1551C54F000E8FEF /* AppDelegate.m in Sources */,
+				79E5B2141552E73F000E8FEF /* AudioDeviceItem.m in Sources */,
+				79E5B2151552E73F000E8FEF /* AudioDeviceItems.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79E5B1F41551C54F000E8FEF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E5B1F51551C54F000E8FEF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		79E5B1FA1551C54F000E8FEF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E5B1FB1551C54F000E8FEF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		79E5B2001551C550000E8FEF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E5B2011551C550000E8FEF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79E5B2031551C550000E8FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		79E5B2041551C550000E8FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		79E5B2061551C550000E8FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AudioStackWatcher/AudioStackWatcher-Prefix.pch";
+				INFOPLIST_FILE = "AudioStackWatcher/AudioStackWatcher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		79E5B2071551C550000E8FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AudioStackWatcher/AudioStackWatcher-Prefix.pch";
+				INFOPLIST_FILE = "AudioStackWatcher/AudioStackWatcher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79E5B1E11551C54F000E8FEF /* Build configuration list for PBXProject "AudioStackWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E5B2031551C550000E8FEF /* Debug */,
+				79E5B2041551C550000E8FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E5B2051551C550000E8FEF /* Build configuration list for PBXNativeTarget "AudioStackWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E5B2061551C550000E8FEF /* Debug */,
+				79E5B2071551C550000E8FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79E5B1DE1551C54F000E8FEF /* Project object */;
+}
