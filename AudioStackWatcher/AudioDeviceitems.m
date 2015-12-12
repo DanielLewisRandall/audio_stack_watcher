@@ -1,5 +1,5 @@
 /*
-AudioStackWatcher - A tool for monitoring the CoreAudio stack
+CoreAudio Monitor - A tool for monitoring the CoreAudio stack
 Copyright (C) 2012  Daniel Randall
 
 This program is free software: you can redistribute it and/or modify

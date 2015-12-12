@@ -28,7 +28,7 @@
 
 /* Begin PBXFileReference section */
 		79186C3B155C8FDC00D5FC12 /* WatcherLegend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WatcherLegend.png; sourceTree = "<group>"; };
-		79E5B1E71551C54F000E8FEF /* AudioStackWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioStackWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E5B1E71551C54F000E8FEF /* CoreAudio Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreAudio Monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E5B1EB1551C54F000E8FEF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		79E5B1EE1551C54F000E8FEF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		79E5B1EF1551C54F000E8FEF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -82,7 +82,7 @@
 		79E5B1E81551C54F000E8FEF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79E5B1E71551C54F000E8FEF /* AudioStackWatcher.app */,
+				79E5B1E71551C54F000E8FEF /* CoreAudio Monitor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,9 +145,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		79E5B1E61551C54F000E8FEF /* AudioStackWatcher */ = {
+		79E5B1E61551C54F000E8FEF /* CoreAudio Monitor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79E5B2051551C550000E8FEF /* Build configuration list for PBXNativeTarget "AudioStackWatcher" */;
+			buildConfigurationList = 79E5B2051551C550000E8FEF /* Build configuration list for PBXNativeTarget "CoreAudio Monitor" */;
 			buildPhases = (
 				79E5B1E31551C54F000E8FEF /* Sources */,
 				79E5B1E41551C54F000E8FEF /* Frameworks */,
@@ -157,9 +157,9 @@
 			);
 			dependencies = (
 			);
-			name = AudioStackWatcher;
+			name = "CoreAudio Monitor";
 			productName = AudioStackWatcher;
-			productReference = 79E5B1E71551C54F000E8FEF /* AudioStackWatcher.app */;
+			productReference = 79E5B1E71551C54F000E8FEF /* CoreAudio Monitor.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -168,8 +168,13 @@
 		79E5B1DE1551C54F000E8FEF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = DanielRandall;
+				TargetAttributes = {
+					79E5B1E61551C54F000E8FEF = {
+						DevelopmentTeam = YS47BR4KK8;
+					};
+				};
 			};
 			buildConfigurationList = 79E5B1E11551C54F000E8FEF /* Build configuration list for PBXProject "AudioStackWatcher" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -183,7 +188,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79E5B1E61551C54F000E8FEF /* AudioStackWatcher */,
+				79E5B1E61551C54F000E8FEF /* CoreAudio Monitor */,
 			);
 		};
 /* End PBXProject section */
@@ -255,11 +260,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -269,7 +282,9 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
@@ -281,15 +296,25 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
@@ -299,9 +324,12 @@
 		79E5B2061551C550000E8FEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioStackWatcher/AudioStackWatcher-Prefix.pch";
 				INFOPLIST_FILE = "AudioStackWatcher/AudioStackWatcher-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.torusound.coreaudiomonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -310,9 +338,12 @@
 		79E5B2071551C550000E8FEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application";
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AudioStackWatcher/AudioStackWatcher-Prefix.pch";
 				INFOPLIST_FILE = "AudioStackWatcher/AudioStackWatcher-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.torusound.coreaudiomonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -330,7 +361,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79E5B2051551C550000E8FEF /* Build configuration list for PBXNativeTarget "AudioStackWatcher" */ = {
+		79E5B2051551C550000E8FEF /* Build configuration list for PBXNativeTarget "CoreAudio Monitor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79E5B2061551C550000E8FEF /* Debug */,

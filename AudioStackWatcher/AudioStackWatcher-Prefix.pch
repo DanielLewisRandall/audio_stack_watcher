@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'AudioStackWatcher' target in the 'AudioStackWatcher' project
+// Prefix header for all source files of the 'CoreAudio Monitor' target in the 'CoreAudio Monitor' project
 //
 
 #ifdef __OBJC__
